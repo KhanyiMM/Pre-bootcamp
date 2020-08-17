@@ -1,14 +1,12 @@
-function summer(x,y) {
-
-var a = 0;
-
-    if (x == 3 || y == 3) {
-        return true;
-} if (x + y == a / 3) {
-    return true; 
-}
- return false;
+function numberThree (x, y) {
+    const sum = x + y;
+    if (x == 3 || y == 3 || sum.toString().includes("3")) {
+    return true;
+    } else {
+    return false;
+    }
 }
 
-console.log(summer(3,73));
-console.log(summer(20,73));
+console.log(numberThree(70,3));
+console.log(numberThree(12,1));
+console.log(numberThree(10,5));
