@@ -1,9 +1,11 @@
 function numberThree (x, y) {
     const sum = x + y;
-    if (x == 3 || y == 3 || sum.toString().includes("3")) {
+    if (x == 3 || y == 3) {
+    return true;
+    } else if (sum.toString().includes("3")) {
     return true;
     } else {
-    return false;
+        return false;
     }
 }
 
